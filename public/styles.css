@@ -1,0 +1,25 @@
+body {
+    font-size: medium;
+    font-family:'Segoe UI', sans-serif;
+    font-weight: 400;
+}
+
+.nav-button {
+    background-color: #6bd3ff;
+    border: 0;
+    width: 120px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    font-size: large;
+}
+
+.nav-button:hover {
+    background-color: #36b2e7;
+}
+
+nav {
+    margin: 20px;
+}
