@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link type = "text/css" rel="stylesheet" href="style.css">
+    </head>
+    <header> 
+        <h1>
+            <img src = "9.png" title = "Cat" style = "width: 50px; vertical-align: middle; padding-right: 20px;" /> 
+            Suika Game MeowPasu </h1>
+         <nav>
+            <a href="../projects/projects.html">
+                <button class="nav-button">Projects</button>
+            </a>
+            <a href="../resume/resume.html">
+                <button class="nav-button">Resume</button>
+            </a>
+            <a href ="../index.html">
+                <button class = "nav-button">Home</button>
+            </a>
+        </nav>
+    </header>
+
+    <body>  
+        <p><a href = "https://github.com/VivianQuach/Suika"> Play Me :)</a>
+            <br><br> 
+            Suika means Watermelon in Japanese. The game is given its name because when you merge fruits together, the final fruit is a watermelon. My rendition of the game is to use cats because I thought cats were cuter.
+        </p>
+
+        <div class = "verlet-container">
+            <div class = "title-container">
+                <img src = "2.png" title = "Cat" style = "width: 25px; vertical-align: middle; padding-right: 20px;" /> 
+                Verlet Physics and its correlation with Suika
+            </div>
+            <div class = "verlet-physics"> 
+                <center> 
+                    <p> 
+                        X(n) = current position
+                     </p>
+                    <p>
+                        A(n) = Acceleratio
+                    </p>
+                    <p>
+                      delta(t^2) = time  <br>      
+                    </p>
+                    <p>
+                        X(n+1) = X(n)^2 - X(n-1) + A(n) x delta(t^2)
+                    </p> 
+                    <p>
+                        X(n+1) = X(n) + X(n) - X(n-1) + A(n) x delta(t^2)
+                    </p> 
+                    <p>
+                        *X(n+1) = X(n) + V(n) x delta(t)*
+                    </p> 
+                    <p>
+                        X(n) - X(n-1) = V(n-1)*detla(t) => The velocity from the objects previous position
+                    </p> 
+                </center>
+                <p> 
+                    The equation is used to determine the next position of the cat's in my suika game, with constraints.
+                </p>
+                <p>
+                    The contraints are very basic ones: applying gravity, border constraints and collision with other cat's. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class ="game-mechanics-containter">
+            <div class = "title-container">
+                <img src = "2.png" title = "Cat" style = "width: 25px; vertical-align: middle; padding-right: 20px;" /> 
+                How to play Suika
+            </div>
+            <div class = "game-mechanics"> 
+                <p> You are basically going to merge cute cats and see how much points you can get.</p>
+                <p> 
+                    There will be a few cats that will pop up that can drop but the other cats must be merged to get. 
+                </p>   
+                <p>
+                    If the cat goes above the screen. Basically, try to spawn to cats at the same time. You lose.
+                </p>
+                </p>
+                <p>
+                    <b>Point System: </b> For ever merge, you get 2 * the level added into your points. so the smallest cat will give you 2 when you merge them and so on.
+                </p>
+            </div>
+            <center> 
+                <video width = 350px; height = 500px; controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+        </div>
+        
+    </body>
+
+</html>
