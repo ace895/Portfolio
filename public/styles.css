@@ -10,9 +10,6 @@ header {
     font-family:'Segoe UI', sans-serif;
     font-weight: 400;
 }
-header:hover{
-    background-color: #add1db; 
-}
 
 h1{
     font-size: xx-large;
@@ -41,10 +38,6 @@ nav {
     justify-content: space-between;
 }
 
-.name-container:hover {
-    background-color: #add1db; 
-}
-
 .body-container {
     padding-left: 20px;
     padding-top: 10px;
@@ -66,10 +59,6 @@ nav {
     display: flex;
 }
 
-.title-container:hover {
-    background-color: #acb3f6;
-}
-
 .title {
     font-size: large;
     font-family: "Tahoma", sans-serif;    
@@ -77,13 +66,10 @@ nav {
     padding: 5px;
 }
 
-
 .home-body {
-    margin-left: 20px;
     position: absolute;
     top: 30%;
 }
-
 
 .body {
     font-size: large;
@@ -94,7 +80,7 @@ nav {
 
 
 .nav-button {
-    background-color: #6bd3ff;
+    background-color: #71d2cb;
     border: 0;
     width: 120px;
     height: 45px;
@@ -108,7 +94,7 @@ nav {
 }
 
 .nav-button:hover {
-    background-color: #36b2e7; 
+    background-color: #5fc0b9; 
 }
 
 .large-button {
@@ -119,6 +105,7 @@ nav {
     padding: 10px;
     border-radius: 5px;
     margin-top: 20px;
+    margin-right:20px;
     color: white;
     font-size: x-large;
 }
@@ -154,4 +141,19 @@ large-img img{
     padding-right: 20px;
     width: 40px;
     height: 40px;
+}
+
+.background-img1 {
+    width: 100%;
+    height: 500px;
+    background: url('bg2.webp') no-repeat center center/cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.background-img2 {
+    width: 100%;
+    height: 500px;
+    background: url('bg.avif') no-repeat center center/cover;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 70%), linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);;
+    mask-composite: intersect;
 }
