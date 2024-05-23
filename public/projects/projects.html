@@ -1,94 +1,100 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link type = "text/css" rel="stylesheet" href="style.css">
-    </head>
-    <header> 
-        <h1>
-            <img src = "big-cat.png" title = "Cat" style = "width: 50px; vertical-align: middle; padding-right: 20px;" /> 
-            Suika Game MeowPasu </h1>
-         <nav>
-            <a href="../projects/projects.html">
-                <button class="nav-button">Projects</button>
-            </a>
-            <a href="../resume/resume.html">
-                <button class="nav-button">Resume</button>
-            </a>
-            <a href ="../index.html">
-                <button class = "nav-button">Home</button>
-            </a>
-        </nav>
-    </header>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Suika Game</title>
+    <link rel="stylesheet" href="..\styles.css">
+</head>
+    
+<header> 
+    <h1>
+        <img src = "big-cat.png" title = "Cat" style = "width: 50px; vertical-align: middle; padding-right: 20px;" /> 
+        Suika Game MeowPasu 
+    </h1>
+    <nav>
+        <a href="../projects/projects.html">
+            <button class="nav-button">Projects</button>
+        </a>
+        <a href="../resume/resume.html">
+            <button class="nav-button">Resume</button>
+        </a>
+        <a href ="../index.html">
+            <button class = "nav-button">Home</button>
+        </a>
+    </nav>
+</header>
 
-    <body> 
-        <center>
-            <a href = "https://github.com/VivianQuach/Suika">
-                <button class="play-button">Play Suika</button>
-            </a> 
-        </center>
-        
-        <p>
+<body> 
+    <center>
+        <a href = "https://github.com/VivianQuach/Suika">
+            <button class="play-button">Play Suika</button>
+        </a> 
+    </center>
+    
+    <div class="body-container">
+        <div class="body">
             <br><br> 
             Suika means Watermelon in Japanese. The original game tasks players with merging two of the same fruit to produce another fruit, 
             with the final fruit being a watermelon. My rendition of the game uses cats rather than fruit, because I thought cats were cuter.
-        </p>
-
-        <div class = "verlet-container">
-            <div class = "title-container">
-                <img src = "small-cat.png" title = "Cat" style = "width: 25px; vertical-align: middle; padding-right: 20px;" /> 
-                Verlet Physics and its Correlation with Suika
-            </div>
-            <div class = "verlet-physics"> 
-                <center> 
-                    <p> 
-                        X(n) = Current Position
-                     </p>
-                    <p>
-                        A(n) = Acceleration
-                    </p>
-                    <p>
-                      delta(t^2) = time  <br>      
-                    </p>
-                    <p>
-                        X(n+1) = X(n)^2 - X(n-1) + A(n) x delta(t^2)
-                    </p> 
-                    <p>
-                        X(n+1) = X(n) + X(n) - X(n-1) + A(n) x delta(t^2)
-                    </p> 
-                    <p>
-                        X(n+1) = X(n) + V(n) x delta(t)
-                    </p> 
-                    <p>
-                        X(n) - X(n-1) = V(n-1)*delta(t) => Velocity from the object's previous position
-                    </p> 
-                </center>
-                <p> 
-                    The equation is used to determine the position of the next cat in my suika game, with constraints.
-                </p>
-                <p>
-                    The contraints are very basic ones: applying gravity, border constraints, and collision with other cats. 
-                </p>
-            </div>
         </div>
+    </div>
 
-
-        <div class ="game-mechanics-containter">
-            <div class = "title-container">
-                <img src = "small-cat.png" title = "Cat" style = "width: 25px; vertical-align: middle; padding-right: 20px;" /> 
-                How to play Suika
-            </div>
-            <div class = "game-mechanics"> 
-                <p> <b>Goal:</b> The aim of the game is to merge cute cats and see how many points you can get.<br>
-                    You can click to spawn cats at the top of the screen which will drop and merge them with other cats of the same kind. <br>
-                    If the cat goes beyond the screen, you lose. <br>
-                    <br>
-                    <b>Point System: </b> For every merge, you get (2 * cat level) added to your points. When you merge two of the smallest cat, you get 2 points, when you merge two of the second smallest, you get 4, and so on.<br>
-                    Here is a short demo of the game:
+    <div class = "title-container">
+        <div class="title">
+            <img src = "small-cat.png" title = "Cat" style = "width: 25px; vertical-align: middle; padding-right: 20px;" /> 
+            Verlet Physics and its Correlation with Suika
+        </div>
+    </div>
+    <div class="body">
+        <center> 
+            <p> 
+                X(n) = Current Position
                 </p>
-            </div>
+            <p>
+                A(n) = Acceleration
+            </p>
+            <p>
+                delta(t^2) = time  <br>      
+            </p>
+            <p>
+                X(n+1) = X(n)^2 - X(n-1) + A(n) x delta(t^2)
+            </p> 
+            <p>
+                X(n+1) = X(n) + X(n) - X(n-1) + A(n) x delta(t^2)
+            </p> 
+            <p>
+                X(n+1) = X(n) + V(n) x delta(t)
+            </p> 
+            <p>
+                X(n) - X(n-1) = V(n-1)*delta(t) => Velocity from the object's previous position
+            </p> 
+        </center>
+        <div class="body-container">
+            <p> 
+                The equation is used to determine the position of the next cat in my suika game, with constraints.
+                The contraints are very basic ones: applying gravity, border constraints, and collision with other cats. 
+            </p>
+        </div>
+    </div>
+
+
+    <div class = "title-container">
+        <div class="title">
+            <img src = "small-cat.png" title = "Cat" style = "width: 25px; vertical-align: middle; padding-right: 20px;" /> 
+            How to play Suika
+        </div>
+    </div>
+    <div class = "body-container"> 
+        <div class="body">
+            <p> <b>Goal:</b> The aim of the game is to merge cute cats and see how many points you can get.<br>
+                You can click to spawn cats at the top of the screen which will drop and merge them with other cats of the same kind. <br>
+                If the cat goes beyond the screen, you lose. <br>
+                <br>
+                <b>Point System: </b> For every merge, you get (2 * cat level) added to your points. When you merge two of the smallest cat, you get 2 points, when you merge two of the second smallest, you get 4, and so on.<br>
+                Here is a short demo of the game:
+            </p>
             <center> 
                 <video width = 350px; height = 500px; controls>
                     <source src="demo.mp4" type="video/mp4">
@@ -96,7 +102,6 @@
                 </video>
             </center>
         </div>
-        
-    </body>
-
-</html>
+    </div>
+    
+</body>

@@ -13,11 +13,85 @@ header {
 header:hover{
     background-color: #add1db; 
 }
+
 h1{
     font-size: xx-large;
     font-family: "Tahoma", sans-serif;  
     font-weight: 700;
 }
+h2{
+    font-size: 60px;
+    font-family: "Tahoma", sans-serif;  
+    font-weight: 100;
+}
+
+nav {
+    margin: 20px;
+}
+
+.name-container{
+    background-color: #b5d8e3;
+    border: solid #a8c8d2;
+    display: flex;
+
+    padding-left: 20px;
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-container:hover {
+    background-color: #add1db; 
+}
+
+.body-container {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 80px;
+    display: flex;
+}
+
+.title-container {
+    
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #bfc5f9;
+    border: solid #8a93e6;
+    border-radius: 10px;
+    display: flex;
+}
+
+.title-container:hover {
+    background-color: #acb3f6;
+}
+
+.title {
+    font-size: large;
+    font-family: "Tahoma", sans-serif;    
+    font-weight: 700; 
+    padding: 5px;
+}
+
+
+.home-body {
+    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+}
+
+
+.body {
+    font-size: large;
+    font-family:'Segoe UI', sans-serif;
+    font-weight: 400;
+    background:transparent;
+}
+
 
 .nav-button {
     background-color: #6bd3ff;
@@ -27,6 +101,7 @@ h1{
     padding: 5px;
     border-radius: 5px;
     margin-right: 10px;
+    margin-top: 20px;
     color: white;
     font-size: large;
     float: right;
@@ -36,7 +111,47 @@ h1{
     background-color: #36b2e7; 
 }
 
-nav {
-    margin: 20px;
+.large-button {
+    background-color: #78B095;
+    border: 0;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: x-large;
 }
 
+.large-button:hover {
+    background-color: #5b997b;
+}
+
+.play-button {
+    background-color: #78B095;
+    border: 0;
+    width: 150px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: x-large;
+}
+
+.play-button:hover {
+    background-color: #5b997b;
+}
+
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+large-img img{
+    padding-right: 20px;
+    width: 40px;
+    height: 40px;
+}
