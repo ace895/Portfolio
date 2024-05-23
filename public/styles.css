@@ -1,14 +1,35 @@
-header {
+.title-container {
+    background-color: #bfc5f9;
+    border: solid #8a93e6;
+}
+
+header, .name-container, .nav-button {
     background-color: #b5d8e3;
-    border: solid #b5d8e3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+
+.large-button, .play-button {
+    background-color: #78B095;
+}
+
+.large-button:hover, .play-button:hover {
+    background-color: #5b997b;
+}
+
+.nav-button:hover {
+    background-color: #90c1cf; 
+}
+
+header {
     padding-left: 20px;
     border-radius: 10px;
+
     font-size: medium;
     font-family:'Segoe UI', sans-serif;
     font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1{
@@ -26,18 +47,6 @@ nav {
     margin: 20px;
 }
 
-.name-container{
-    background-color: #b5d8e3;
-    border: solid #a8c8d2;
-    display: flex;
-
-    padding-left: 20px;
-    border-radius: 10px;
-
-    align-items: center;
-    justify-content: space-between;
-}
-
 .body-container {
     padding-left: 20px;
     padding-top: 10px;
@@ -46,15 +55,12 @@ nav {
     display: flex;
 }
 
-.title-container {
-    
+.title-container {   
     margin-top: 30px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 
-    background-color: #bfc5f9;
-    border: solid #8a93e6;
     border-radius: 10px;
     display: flex;
 }
@@ -80,25 +86,20 @@ nav {
 
 
 .nav-button {
-    background-color: #71d2cb;
-    border: 0;
     width: 120px;
     height: 45px;
     padding: 5px;
-    border-radius: 5px;
     margin-right: 10px;
-    margin-top: 20px;
-    color: white;
+
+    border: 0;
+    border-radius: 5px;
+    
+    color: black;
     font-size: large;
     float: right;
 }
 
-.nav-button:hover {
-    background-color: #5fc0b9; 
-}
-
 .large-button {
-    background-color: #78B095;
     border: 0;
     width: 400px;
     height: 100px;
@@ -108,14 +109,18 @@ nav {
     margin-right:20px;
     color: white;
     font-size: x-large;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.large-button:hover {
-    background-color: #5b997b;
+.large-button a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .play-button {
-    background-color: #78B095;
     border: 0;
     width: 150px;
     height: 70px;
@@ -125,10 +130,6 @@ nav {
     margin-top: 20px;
     color: white;
     font-size: x-large;
-}
-
-.play-button:hover {
-    background-color: #5b997b;
 }
 
 
