@@ -125,11 +125,6 @@ nav {
     align-items: center;
 }
 
-.large-button a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .play-button {
     border: 0;
     width: 150px;
@@ -197,6 +192,10 @@ large-img img{
     align-items: flex-end;
     justify-content: flex-end;
     display:absolute;
+}
+
+.left_bottom a {
+    text-decoration: none;
 }
 
 .rigth_half_container{
