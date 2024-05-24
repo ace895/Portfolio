@@ -4,7 +4,7 @@
     border: solid #8a93e6;
 }
 
-header, .name-container, .nav-button, .left_top {
+.name-container, .left_top {
     background-color: #b5d8e3;
 }
 
@@ -17,11 +17,10 @@ header, .name-container, .nav-button, .left_top {
 }
 
 .nav-button:hover {
-    /*background-color: #90c1cf;*/
     background-color: #8fc5b7;
 }
 
-.right_bottom, .nav-button {
+.right_bottom, .nav-button, header {
     background-color: #abd0c6;
 }
 
