@@ -239,3 +239,15 @@ footer{
     padding-left: 5px;
     border-radius: 10px;
 }
+
+cat-footer-top img {
+    width: 30px; 
+    height: 30px; 
+    padding-right: 60px;
+}
+
+cat-footer-bottom img {
+    width: 30px; 
+    height: 30px; 
+    padding-left: 60px;
+}

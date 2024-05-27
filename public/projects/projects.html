@@ -10,7 +10,7 @@
     
 <header> 
     <h1>
-        <img src = "big-cat.png" title = "Cat" style = " width: 50px; height: 50px; vertical-align: middle; padding-right: 20px;" /> 
+        <img src = "big-cat.png" title = "Cat" style = "width: 50px; height: 50px; vertical-align: middle; padding-right: 20px;" /> 
         Suika Game MeowPasu 
     </h1>
     <nav>
@@ -37,9 +37,9 @@
         <div class="body">
             <br><br> 
             Suika means Watermelon in Japanese. The original game tasks players with merging two of the same fruit to produce another fruit, 
-            with the final fruit being a watermelon. Once, your able to produce two watermelon, it will cycle back to the smallest fruit. My rendition of the game uses cats rather than fruit, because I thought cats were cuter.
+            with the final fruit being a watermelon. Once, your able to produce two watermelons, it will cycle back to the smallest fruit. My rendition of the game uses cats rather than fruit, because I thought cats were cuter.
             <br> 
-            When looking for suika game, it is usually coded in Javascript but I decided to produce my rendition in Java using Processing as it allows me to easily create a GUI for the game. 
+            Most Suika games are coded in Javascript, but I decided to produce my rendition in Java using Processing as it allows me to easily create a GUI for the game. 
             The production of this game was helped by this youtube video (
             <a href = "https://youtu.be/lS_qeBy3aQI"> 
                 Verlet Physics Video 
@@ -51,31 +51,19 @@
 
     <div class = "title-container">
         <div class="title">
-            <img src = "small-cat.png" title = "Cat" style = "width: 25px; height: 25px; vertical-align: middle; padding-right: 20px;" /> 
+            <img src = "small-cat.png" alt = "Cat" style = "width: 25px; height: 25px; vertical-align: middle; padding-right: 20px;" /> 
             Verlet Physics and its Correlation with Suika
         </div>
     </div>
     <div class="body">
         <center> 
-            <p> 
-                X(n) = Current Position
-            </p>
-            <p>
-                A(n) = Acceleration
-            </p>
-            <p>
-                delta(t^2) = time  <br>      
-            </p>
-            <p>
-                X(n+1) = X(n)^2 - X(n-1) + A(n) x delta(t^2)
-            </p> 
-            <p>
-                X(n+1) = X(n) + X(n) - X(n-1) + A(n) x delta(t^2)
-            </p> 
-            <p>
-                X(n+1) = X(n) + V(n) x delta(t)
-            </p> 
-            <p>
+            <p style="line-height: 200%;"> 
+                X(n) = Current Position <br>
+                A(n) = Acceleration <br>
+                delta(t^2) = time  <br>
+                X(n+1) = X(n)^2 - X(n-1) + A(n) x delta(t^2) <br>
+                X(n+1) = X(n) + X(n) - X(n-1) + A(n) x delta(t^2) <br>
+                X(n+1) = X(n) + V(n) x delta(t) <br>
                 X(n) - X(n-1) = V(n-1)*delta(t) => Velocity from the object's previous position
             </p> 
         </center>
@@ -91,7 +79,7 @@
 
     <div class = "title-container">
         <div class="title">
-            <img src = "small-cat.png" title = "Cat" style = "width: 25px; height: 25px; vertical-align: middle; padding-right: 20px;" /> 
+            <img src = "small-cat.png" alt = "Cat" style = "width: 25px; height: 25px; vertical-align: middle; padding-right: 20px;" /> 
             How to play Suika
         </div>
     </div>
@@ -113,39 +101,39 @@
         </div>
     </div>
     <footer> 
-        <img src = "bg-0.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-1.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-2.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-0.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-1.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-2.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-0.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-1.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-2.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-0.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-1.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-2.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-0.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-1.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-2.png" title = "bg-0" style = "width: 30px; height: 30px; padding-right: 60px;"/>
-        <img src = "bg-0.png" title = "bg-0" style = "width: 30px; height: 30px;"/>
+        <cat-footer-top><img src = "bg-0.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-1.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-2.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-0.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-1.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-2.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-0.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-1.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-2.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-0.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-1.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-2.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-0.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-1.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-2.png" alt = "cat"/></cat-footer-top>
+        <cat-footer-top><img src = "bg-0.png" alt = "cat" style = "padding-right: 0px"/></cat-footer-top>
         <br> 
         
-        <img src = "bg-3.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 45px;"/>
-        <img src = "bg-4.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-5.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-3.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-4.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-5.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-3.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-4.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-5.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-3.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-4.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-5.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-3.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-4.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
-        <img src = "bg-5.png" title = "bg-0" style = "width: 30px; height: 30px; padding-left: 60px;"/>
+        <cat-footer-bottom><img src = "bg-3.png" alt = "cat" style = "padding-left: 45px"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-4.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-5.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-3.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-4.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-5.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-3.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-4.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-5.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-3.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-4.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-5.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-3.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-4.png" alt = "cat"/></cat-footer-bottom>
+        <cat-footer-bottom><img src = "bg-5.png" alt = "cat"/></cat-footer-bottom>
     </footer>
     
 </body>
