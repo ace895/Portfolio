@@ -214,8 +214,6 @@ large-img img{
 }
 
 .diamond{
-    height: 600px;
-    width: 400px;
     background-color: transparent;
     justify-content: center;
     position:fixed;
