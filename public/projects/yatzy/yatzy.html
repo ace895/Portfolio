@@ -18,10 +18,10 @@
             <a href="../projects_home.html">
                 <button class="nav-button">Projects</button>
             </a>
-            <a href="../resume/resume.html">
+            <a href="../../resume/resume.html">
                 <button class="nav-button">Resume</button>
             </a>
-            <a href ="../index.html">
+            <a href ="../../index.html">
                 <button class = "nav-button">Home</button>
             </a>
         </nav>
@@ -53,12 +53,11 @@
                 <tr>
                     <td style="width: 60%; padding-right: 10px">
                         In order to implement Yatzy, we used HTML and CSS to create the UI and Javascript to code the logic.
-                        We kept a fairly simple UI, with the main features being the dice and the score board table to keep track of points.
+                        We kept a fairly simple UI, with the main features being the dice and the score board table to keep track of points. We used the table
+                        component for easy formatting, and used contrasting colors for an appealing design.
                         For the logic, we divided the code into smaller parts such as the dice logic, gameplay, and UI interactions, and brought them together
                         in the main game engine.
                         We also briefly used Node JS for debugging the logic when were yet to create the UI.
-                        Vivian mainly worked on the game engine, while Anika developed some of the dice mechanics as well as the majority of the 
-                        UI and some bridges between the frontend and backend that Vivian used to connect the UI to the game engine.
                     </td>
                     <td>
                         <img src="JS_logo.png" alt="Javascript Logo" style="height: 100px; width: 100px;"/>
@@ -80,25 +79,91 @@
     <div class = "title-container">
         <div class="title">
             <img src = "dice.png" alt = "Dice" style = "vertical-align: middle; padding-right: 20px;" /> 
+            Team Efforts
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="body">
+            <table>
+                <tr>
+                    <td>
+                        <img src="workload.png" alt="Javascript Logo" style="height: 180px; width: 180px;"/>
+                    </td>
+                    <td style="width: 85%; padding-right: 10px">
+                        Vivian was tasked with developing the main game engine, which involved calculating scores for each category every roll, 
+                        tabulating total scores, keeping track of dice rerolls, and providing the actual game rules and mechanics.<br>
+                        Anika was tasked with developing some of the dice mechanics, the UI, and some of the logic that interacted with the UI. This established 
+                        a connection between the frontend and backend, and allowed Vivian to seemlessly incorporate the engine.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class = "title-container">
+        <div class="title">
+            <img src = "dice.png" alt = "Dice" style = "vertical-align: middle; padding-right: 20px;" /> 
+            Challenges
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="body">
+            <table>
+                <tr>
+                    <td style="width: 85%; padding-right: 10px">
+                        While the majority of development went smoothly, we did encounter a few challenges. We began with developing the backend Javascript portion,
+                        but had trouble with organizing the code into logical components. We initially coded modules in seperate files, including one for the dice and 
+                        and one for the game state. However, we realized we needed to run a local server in order to export and import them. 
+                        Instead, we decided to just have a Dice and Game variable to encompass all the associated functions. This allowed us to encapsulate 
+                        functionality while keeping the implementation simple.
+                        The rest of the development progressed with very few errors, with the only troubles occuring with minor logic errors that were easy to 
+                        detect and fix.
+                    </td>
+                    <td>
+                        <img src="challenge.png" alt="Javascript Logo" style="height: 180px; width: 180px;"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class = "title-container">
+        <div class="title">
+            <img src = "dice.png" alt = "Dice" style = "vertical-align: middle; padding-right: 20px;" /> 
             Gameplay
         </div>
     </div>
     <div class="body-container">
         <div class="body">
-            If you don't know how Yatzy works, here is a brief summary.
+            Here is an outline of how Yatzy works, and how it is played in our implementation of it.
             <br><br><b>Goal</b>: Obtain as many points as possible by rolling certain configurations of dice. Each configuration has an associated category which gives
             a certain number of points outlined in the table below. For example, rolling 3 twos can score the player 6 points.
             Some configurations may have more than one possible category, but once a category is filled, it cannot be used again, so players must choose wisely.
             <br><br><b>How to Play</b>:
             <ol>
-                <li>Player rolls all 5 of their dice by clicking "Roll"</li>
-                <li>Player may roll each dice up to 3 times, if they wish, by clicking on an individual dice</li>
+                <li>
+                    Player rolls all 5 of their dice by clicking "Roll"
+                    <br>
+                    <img class="full-img" src="before_roll.png">
+                </li>
+                <li>
+                    Player may reroll some dice up to 3 times, if they wish, by clicking on dice to select them and then clicking "Reroll"
+                    <br>
+                    <img class="full-img" src="before_reroll.png">
+                </li>
                 <li>
                     Once the player is satisfied with their rolls or runs out of rolls, they will click on an empty category in the score table 
                     to submit their score. 0 points may be obtained if the dice rolls do not fit an available category!
+                    <br>
+                    <img class="full-img" src="before_score_submit.png">
+                    <img class="full-img" src="after_score_submit.png">
                 </li>
                 <li>The next turn starts and the same process is repeated</li>
-                <li>The game is over once the player has filled all categories, and their score is then tabulated</li>
+                <li>
+                    The game is over once the player has filled all categories, and their score is then tabulated
+                    <br>
+                    <img class="fitted-img" src="end_game.png">
+                </li>
             </ol>
         </div>
     </div>
