@@ -36,7 +36,7 @@
     <div class="body-container">
         <div class="body">
             For CSI 3140, we were tasked with creating a game of Yatzy on the web. We utilized skills we learned throughout the course via lectures and labs. 
-            The game includes a start page, the main gameplay page, score keeping mechanisms, and an end game page. You can find a link to the Github repository 
+            The game includes a start page, the main gameplay page, score keeping mechanisms, leaderboard and an end game page. You can find a link to the Github repository 
             that contains all the code to run the game by clicking the button above!
         </div>
     </div>
@@ -125,8 +125,8 @@
                     </td>
                     <td style="width: 85%; padding-right: 10px">
                         Vivian was tasked with developing the main game engine, which involved calculating scores for each category every roll, 
-                        tabulating total scores, keeping track of dice rerolls, and providing the actual game rules and mechanics.<br>
-                        Anika was tasked with developing some of the dice mechanics, the UI, and some of the logic that interacted with the UI. This established 
+                        tabulating total scores, keeping track of dice rerolls, creating the leaderboard and providing the actual game rules and mechanics.<br>
+                        Anika was tasked with developing some of the dice mechanics, the UI, most of the api calls and some of the logic that interacted with the UI. This established 
                         a connection between the frontend and backend, and allowed Vivian to seemlessly incorporate the engine.
                     </td>
                 </tr>
@@ -153,8 +153,15 @@
                         The rest of the development progressed with very few errors, with the only troubles occuring with minor logic errors that were easy to 
                         detect and fix.
                     </td>
-                    <td>
+                    <td rowspan = "2">
                         <img src="challenge.png" alt="Javascript Logo" style="height: 180px; width: 180px;"/>
+                    </td>
+                </tr>
+                <tr> 
+                    <td> 
+                        With version 2, the major challenges that we have been through was the api calls as we did not have a full understanding of how it was implemented. 
+                        We used $_SESSSION function and error_log() to help us debug any problems that we arise. For example, using $_SESSION to understanding the format of the data and 
+                        what data is being return from the php functions. Or using error_log() in the api.php file to get the data that is being return from the php file. 
                     </td>
                 </tr>
             </table>
@@ -194,7 +201,7 @@
                 </li>
                 <li>The next turn starts and the same process is repeated</li>
                 <li>
-                    The game is over once the player has filled all categories, and their score is then tabulated
+                    The game is over once the player has filled all categories, and their score is then tabulated. Then window will ask for a name to add to the leaderboard.
                     <br>
                     <img class="fitted-img" src="end_game.png">
                 </li>
