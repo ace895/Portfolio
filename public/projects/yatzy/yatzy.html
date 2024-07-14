@@ -28,9 +28,14 @@
     </header>
 
     <center>
-        <a href = "https://github.com/ace895/Yatzy">
-            <button class="play-button">Play Yatzy</button>
-        </a> 
+        <button onclick="playYatzy()" class="play-button">Play Yatzy</button>
+        <script>
+            function playYatzy() {
+                if (window.confirm("Please navigate to the Yatzy/public directory in the command prompt, enter \"php -S localhost:4000\", and click OK")) {
+                    window.location.href = "http://www.localhost:4000/start_page.html"
+                }
+            }
+        </script>
     </center>
     
     <div class="body-container">
