@@ -45,10 +45,16 @@ h1{
     font-weight: 700;
 }
 h2{
-    font-size: 60px;
+    font-size: 56px;
     font-family: "Tahoma", sans-serif;  
     font-weight: 100;
     margin-bottom: 20px;
+    margin-right: 60px;
+}
+@media (max-width: 750px){
+    h2{
+        font-size: 40px;
+    }
 }
 
 /*Containers and Bodies*/
@@ -61,7 +67,8 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 80px;
-    display: flex;
+    display: relative;
+
 }
 
 .title-container {   
@@ -96,14 +103,14 @@ nav {
 /*Buttons*/
 .nav-button {
     border: 0;
-    width: 200px;
+    width: 150px;
     height: 80px;
-    padding: 10px;
+    padding: 1.5%;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
     color: white;
-    font-size: large;
-    float: right; 
+    float:right;
+    flex-wrap:wrap;
 
     font-size: large;
     font-family:'Segoe UI', sans-serif;
@@ -112,9 +119,9 @@ nav {
 
 .large-button {
     border: 0;
-    width: 300px;
-    height: 100px;
-    padding: 10px;
+    width: 80%;
+    height: 70%;
+    padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
     margin-right:20px;
@@ -124,12 +131,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: normal; 
+    word-wrap: break-word;
 }
 
 .play-button {
     border: 0;
-    width: 150px;
-    height: 70px;
+    width: 10%;
+    height: 30%;
     padding: 5px;
     border-radius: 5px;
     margin-left: 20px;
@@ -163,31 +172,28 @@ large-img img{
 /*Home page graphics*/
 .left_half_container{
     width: 50%;
-    height:100%;
-    float: left; 
-    display:inline-block;
-    margin:0;
-    padding:0;
-    position: fixed;
+    height: 100%;
+    display: relative;
+    position: absolute;
+    top: 8px;
+    left: 16px;
 }
 
 .left_top{
     border-radius: 10px;
     width:100%; 
     height: 40%;
-    
-    padding-left: 20px;
-    display: grid;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    display:grid; 
     align-items: end;
-
 }
 
 .left_bottom{
     width:100%; 
     height: 60%;
-    align-items: flex-end;
-    justify-content: flex-end;
     display:absolute;
+    position: relative;
 }
 
 .left_bottom a {
@@ -198,46 +204,43 @@ large-img img{
     width: 50%;
     height: 100%; 
     float: right;
-    display: inline-block;
-    margin:0;
-    padding:0;
-    position: fixed;
+    display: relative;
+    position: absolute;
+    right: 16px;
+    bottom: 8px;
 }
 
 .right_top{
-    width:100%; 
+    float:right;
+    width:50%; 
     height: 20%; 
-    position: fixed;
-    display: inline-block;
+    position: relative;
+    display:absolute;
+    padding-bottom: 10px;
 }
 
 .right_bottom {
     width: 50%;
     height: 80%;
-    position: fixed;
+    position:fixed;
     bottom: 0;
     right: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    display:flex;
+    
     padding: 20px;
     border-radius: 10px;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .diamond{
-    background-color: transparent;
-    justify-content: center;
-    position:fixed;
-    display: flex;
-    overflow: hidden;
-    align-items: flex-end;
+    height: 100%;
+    width: 90%;
+    flex-wrap: wrap;
+    object-position:center;
+    object-fit:contain;
 }
-.diamond img{
-    width: 440px;
-    height: 500px;
-    object-position:bottom;
-    object-fit: cover;
-}
+
 
 /* Footer for Project */ 
 
