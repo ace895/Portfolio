@@ -67,7 +67,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 80px;
-    display: relative;
+    display: absolute;
 
 }
 
@@ -78,7 +78,7 @@ nav {
     padding-bottom: 10px;
 
     border-radius: 10px;
-    display: flex;
+    display: relative;
 }
 
 .title {
@@ -187,6 +187,7 @@ large-img img{
     flex-wrap: wrap;
     display:grid; 
     align-items: end;
+    z-index:2;
 }
 
 .left_bottom{
@@ -203,20 +204,21 @@ large-img img{
 .rigth_half_container{
     width: 50%;
     height: 100%; 
-    float: right;
-    display: relative;
-    position: absolute;
+    float:right;
+    display: flex;
+    position: relative;
     right: 16px;
     bottom: 8px;
 }
 
 .right_top{
-    float:right;
     width:50%; 
-    height: 20%; 
-    position: relative;
-    display:absolute;
+    height: 100%;
+    float: right;  
+    position: flex;
+    display:relative;
     padding-bottom: 10px;
+    z-index: -1;
 }
 
 .right_bottom {
@@ -231,6 +233,7 @@ large-img img{
     border-radius: 10px;
     align-items: flex-end;
     justify-content: center;
+    z-index: 2; 
 }
 
 .diamond{
