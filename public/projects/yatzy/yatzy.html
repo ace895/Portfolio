@@ -32,7 +32,7 @@
         <script>
             function playYatzy() {
                 if (window.confirm("Please navigate to the Yatzy/public directory in the command prompt, enter \"php -S localhost:4000\", and click OK")) {
-                    window.location.href = "http://www.localhost:4000/start_page.html"
+                    window.location.href = "http://www.localhost:4000/login.html"
                 }
             }
         </script>
@@ -125,10 +125,10 @@
             <table>
                 <tr>
                     <td style="width: 60%; padding-right: 10px">
-                        For the third version, we made use of postgreSQL to store all the users data into a database. 
-                        We still used HTML and CSS to create the UI, Javascript to update the UI and PHP and AJAX to handle the logic. 
-                        All the UI is still the same but we had implemented a login, create account, admin and player information page as it uses the information from the database. 
-                        We re-implemented the leaderboard, so that when the game finishes it is stored into the database with the players identifications. 
+                        For the third version, we made use of PostgreSQL to store all the users data into a database. 
+                        We still used HTML and CSS to create the UI, Javascript to update the UI, and PHP and AJAX to handle the logic. 
+                        All the UI is still the same, but we implemented a login, account creation, management page, and player information page which all use information stored in the database. 
+                        We re-implemented the leaderboard and score storage, so that when the game finishes it is stored into the database with the players identifications. 
                     </td>
                     <td>
                         <img src="assets/JS_logo.png" alt="Javascript Logo" style="height: 100px; width: 100px;"/>
@@ -166,9 +166,11 @@
                     </td>
                     <td style="width: 85%; padding-right: 10px">
                         Vivian was tasked with developing the main game engine, which involved calculating scores for each category every roll, 
-                        tabulating total scores, keeping track of dice rerolls, creating the leaderboard and providing the actual game rules and mechanics.<br>
+                        tabulating total scores, keeping track of dice rerolls, creating the leaderboard and providing the actual game rules and mechanics. She also 
+                        designed the player information page and leaderboard system.<br>
                         Anika was tasked with developing some of the dice mechanics, the UI, most of the api calls and some of the logic that interacted with the UI. This established 
-                        a connection between the frontend and backend, and allowed Vivian to seemlessly incorporate the engine.
+                        a connection between the frontend and backend, and allowed Vivian to seemlessly incorporate the engine. She also created the admin page and managed the
+                        database implementation.
                     </td>
                 </tr>
             </table>
@@ -208,7 +210,8 @@
                 </tr>
                 <tr> 
                     <td> 
-                        With version 3, the major challenges that we encountered ...
+                        With version 3, the main challenge we encountered was learning how to set up the database from within PHP. This required the pgsql extension
+                        which we needed to add to PHP's config file. This was the only major learning curve, as we were both familiar with using Postgres and SQL.
                     </td>
                 </tr>
             </table>
