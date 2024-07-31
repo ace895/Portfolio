@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="assets/yatzy_api.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="start-background">
+    <div class = "start_container">
+        <div class="start_header">
+            <center>
+                <h1>
+                    YATZY
+                </h1>
+
+                <p id="signupError"><b>Please enter your username and password</b></p>
+                <form>  
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <br>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                    <br>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <br>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <br>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <br>
+                </form>
+                <button type="button" id="sign-up-button" onclick="signup()">Sign Up</button>
+
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
