@@ -49,9 +49,11 @@
             const topScores = await callWithoutParam('getTopScores');
             const scoresList = $('#scores_list');
             if (topScores && topScores.length > 0) {
-                topScores.forEach((score, index) => {
-                    scoresList.append('<tr><td>' + (index + 1) + '</td><td>' + score + '</td></tr>'  + date_scored + '</td></tr>');
-                });
+                var index = 1;
+                for (s of topScores) {
+                    scoresList.append('<tr><td>' + index + '</td><td>' + s.score + '</td><td>'  + s.date_scored + '</td></tr>');
+                    index ++;
+                }
             } else {
                 scoresList.append('<tr><td colspan="2">No scores available</td></tr>');
             }

@@ -117,9 +117,9 @@ class YatzyDatabase {
 
     // Fetches top 10 scores of the user
     function get_top_scores($username) {
-        $query = "SELECT Score FROM Scores WHERE Username = '$username' ORDER BY Score DESC LIMIT 10;";
+        $query = "SELECT Score, Date_Scored FROM Scores WHERE Username = '$username' ORDER BY Score DESC LIMIT 10;";
         $result = pg_query($this->connection, $query);
-        return pg_fetch_all_columns($result);
+        return pg_fetch_all($result);
     }
 
     //Deletes a given user from the database
@@ -136,7 +136,6 @@ class YatzyDatabase {
                 SET first_name = '$fName', last_name = '$lName'
                 WHERE username = '$username';";
         $result = pg_query($this->connection, $query);
-        echo $query;
         return $result;
     }
 

@@ -1,7 +1,4 @@
 <?php
-
-define("PASSWORD", "123456");
-
 $GLOBALS["appDir"] = resolve_path("app");
 $GLOBALS["vendorDir"] = resolve_path("vendor");
 require_once $GLOBALS["vendorDir"] . "/autoload.php";
@@ -10,7 +7,7 @@ $GLOBALS["dbConfig"] = [
     "host" => "localhost",
     "dbname" => "yatzy",
     "user" => "postgres", 
-    "password" => PASSWORD
+    "password" => "password"
 ];
 
 function resolve_path($name)
